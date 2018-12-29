@@ -1,10 +1,16 @@
 <template>
   <div id="app">
-    <el-container>
-  <el-aside width="200px">Aside</el-aside>
+   <el-container>
+  <el-aside width="200px">
+    <Nav-vue></Nav-vue>
+  </el-aside>
   <el-container>
-    <el-header>Header</el-header>
-    <el-main>Main</el-main>
+    <el-header>
+      <Index></Index>
+   </el-header>
+    <el-main>
+      <router-view></router-view>
+    </el-main>
     <el-footer>Footer</el-footer>
   </el-container>
 </el-container>
@@ -12,9 +18,19 @@
 </template>
 
 <script>
+import NavVue from  "./components/nvationF"
+import indexvue from "./components/index"
 export default {
   name: 'App',
-  data(){}
+  data(){
+    return {
+
+    }
+  },
+  components:{
+    "Nav-vue":NavVue,
+    "Index":indexvue
+  }
 }
 </script>
 

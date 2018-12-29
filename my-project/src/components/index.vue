@@ -1,6 +1,6 @@
 <template>
-    <div id="app">
-        
+    <div>
+        1111111
     </div>
 </template>
 <style scoped>
